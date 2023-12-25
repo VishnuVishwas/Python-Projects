@@ -1,0 +1,3 @@
+- BMI_Calculator
+  - calculuating BMI based on height and weight
+  - used simple data types and if statements
