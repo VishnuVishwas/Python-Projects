@@ -1,46 +1,36 @@
-import math
+# data types in python 
 
-#int
-a = 5
-print('Integer: '+str(a))
+# int 
+number = 45
+print("Type of :", number, "is : ", type(number))
 
-#float
-b = 25.7
-print('Float: '+str(b))
+# float
+number = 45.6
+print("Type of :", number, "is : ", type(number))
 
-#divide
-c = int(b//a)
-print('Divide Operation: '+str(c))
+# string 
+name = "Itachi"
+print("Type of :", name, "is : ", type(name))
 
-# integer pow
-d = c**a
-print(f'Power: {c}^{a}={d}')
+# list    
+fruits = ['Mango', 'Apple']
+print("Type of :", fruits, "is : ", type(fruits))
 
-# List
-names = ['cat','dog','marvel']
-print(names)
+# Boolean
+flag = True
+print(flag == False)    #checks if flag is eq to false
 
-# Dictionary
-contact_info = {'name':"Dojo",
-                "email":"dojo@gmail.com",
-                "contact":"+1838523842"}
+# Tuple 
+constants = (3.14, 9.8)
+print("Type of :", constants[0], "is : ", type(constants))
 
-print(contact_info)
+# set
+set = {'vishnu', 20, 'Male'}
+print("Type of :", set, "is : ", type(set))
 
-#List operations
-names.append('Montony')
-print(f'After Adding to List: {names}')
-
-other_names = ['Naruto','Sakuna','Itadori','Gojo']
-names.extend(other_names)
-print(f'After extending with other names: {names}')
-
-# Reverse the list
-names.reverse()
-print(f'Reverse the list: {names}')
-
-
-
-# Execute these file only when these file is run
-if __name__ == "__main__":
-    pass
+phone_book = {
+    1 : "Nagato",
+    2 : "Saske",
+    3 : "Madara"
+}
+print(type(phone_book))
