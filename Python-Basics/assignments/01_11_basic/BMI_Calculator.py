@@ -1,7 +1,6 @@
-# Body Mass Calculator 
-
-# The calucultions is done of meteric measures i.e 
-# height in meters and weight in kilograms
+"""Body Mass Calculator 
+The calucultions is done of meteric measures i.e 
+height in meters and weight in kilograms"""
 
 # Get user input
 height = float(input("Enter the height in m : "))
