@@ -16,7 +16,7 @@
   - Unpacking tuples
   - Frequency of element
 
-- dictionary
+- dictionary.py
   - Create dictionary
   - Access items
   - List all keys, values and items
