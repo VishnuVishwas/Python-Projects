@@ -40,7 +40,7 @@ n_per_year = int(input("Enter the number of compounding periods per year: "))
 time_years = float(input("Enter the number of years: "))
 
 
-# call functions and print the answer which were returned by called function
+# call functions and print the answer which were returned by called functions
 print("Future Value:", future_value(pv, rate, n_per_year, time_years))
 
 loan_amount = float(input("Enter the loan amount: "))
