@@ -1,0 +1,7 @@
+- financialCalculator.py
+  - calculate future Value
+  - calculate periodic Payment Loan
+  - calucate periodic payment annumity
+  - calculate rate of intrest
+  - calculate number of compouding periods
+  - calculating the present value
