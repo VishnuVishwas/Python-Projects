@@ -1,1 +1,7 @@
-- Here it is extra things you have learnt
+- Set
+  - creating a set
+  - check if value is in set
+  - Add elements from one set to another
+  - merge two sets
+  - Intersection
+  - difference - keep everything except the duplicates
