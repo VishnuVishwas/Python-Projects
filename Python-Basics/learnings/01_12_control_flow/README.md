@@ -5,6 +5,7 @@
   - else
 
 - loops.py
+
   - while loop
     - break
     - continue
@@ -13,3 +14,6 @@
     - continue
     - range
     - nested for loop
+
+- rps
+- updated rps game with loops
