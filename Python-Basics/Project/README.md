@@ -1,4 +1,13 @@
-- Here you add the description of the project
+- Description
+
+  - Personal Library Management System
+  - we can insert books
+  - we can read the books in library
+
 - time required to complete the task
+
+  - half an hour
+
 - what all the things you have referred for completing the task
-- steps taken to tackle the problems faced
+
+  - reffered youtube tutorial - classes section
