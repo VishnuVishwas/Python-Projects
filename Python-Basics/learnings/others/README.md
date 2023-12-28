@@ -26,5 +26,17 @@
   - used non local variable to count player and computer wins.
 
 - rps6_fStrings.py
+
   - Formatting strings
   - eg: print(f"\nGame count: {str(game_count)}")
+
+- NumberGuess_RPS.py
+
+  - we have two game combined
+  - using 2 games as modules and playing simultenoutsly.
+
+- classes.py
+  - objects
+  - classes
+  - inheritance
+  - polymorphism
