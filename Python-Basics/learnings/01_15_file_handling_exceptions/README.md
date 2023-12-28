@@ -1,0 +1,3 @@
+- exceptions.py
+  - handling exceptions raised by machine
+  - custom exception
