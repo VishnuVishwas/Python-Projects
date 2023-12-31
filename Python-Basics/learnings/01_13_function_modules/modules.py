@@ -1,15 +1,15 @@
 # module
 
 # import math
-# from math import pi as p 
-# print(p)
+from math import pi as p 
+print(p)
 
-# import random as rd
-# # print(dir(rd))
-# for item in dir(rd) :
-#     print(item)
+import random as rd
+# print(dir(rd))
+for item in dir(rd) :
+    print(item)
 
-# from enum import Enum
+from enum import Enum
 
 
 import kansas 

@@ -1,6 +1,6 @@
 import sys
 from rps import rps
-from guessNumber import guess_number
+from learnings.others.NumberGuess_RPS.guessNumber import guess_number
 
 
 def play_game(name='PlayerOne'):
