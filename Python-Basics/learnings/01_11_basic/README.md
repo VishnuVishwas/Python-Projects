@@ -31,7 +31,13 @@
         - Deleting / Updating from a string
 
       - Lists
-        -
-        -
-        -
-        -
+
+        - Create List
+        - Nested List
+        - size of list
+        - String to list
+        - Adding elements to list
+        - Reverse a list -> reverse()
+        - Removing elements from the list
+
+      - Tuples
