@@ -17,3 +17,24 @@
 
 - rps
 - updated rps game with loops
+
+- Conditional Statements
+  - if statement
+  - elif statement
+  - else statement
+  - Short hand if 
+  - Short hand else
+  - Nested if
+  - and ,or, not
+  - Pass
+
+- Loops
+  - While 
+  - for 
+  - Iterating list
+  - Iterating Dictionary
+  - Break 
+  - Continue
+  - working of loop internally
+
+
