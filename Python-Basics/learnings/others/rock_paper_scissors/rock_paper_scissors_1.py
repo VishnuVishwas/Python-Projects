@@ -16,7 +16,7 @@ if(playerChoice < 1 | playerChoice > 3):
 
 computerChoice = int(random.choice("123"))
 
-print("Your choice : " + str(RockPaperScissors(playerChoice).name))
+print("Your choice : ", str(RockPaperScissors(playerChoice).name))
 print("Computer choice : " + str(RockPaperScissors(computerChoice).name)) 
 
 if playerChoice == 1 and computerChoice == 3 :
