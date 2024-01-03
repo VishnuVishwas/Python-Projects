@@ -7,7 +7,7 @@ height = float(input("Enter the height in m : "))
 weight = float(input("Enter the weight in kgs : "))
 
 #calculate the bmi 
-bmi = round( (weight/(height*height)) , 1)
+bmi = round( (weight/(height*height)) , 2)
 print("Your BMI is : " + str(bmi))
 
 # Notify the user, what should be the next step

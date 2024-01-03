@@ -4,7 +4,7 @@ from enum import Enum
 import sys
 import random
 
-class RPS(Enum) :
+class RockPaperScissors(Enum) :
     ROCK = 1
     PAPER = 2
     SCISSORS = 3
@@ -16,8 +16,8 @@ if(playerChoice < 1 | playerChoice > 3):
 
 computerChoice = int(random.choice("123"))
 
-print("Your choice : " + str(RPS(playerChoice).name))
-print("Computer choice : " + str(RPS(computerChoice).name)) 
+print("Your choice : ", str(RockPaperScissors(playerChoice).name))
+print("Computer choice : " + str(RockPaperScissors(computerChoice).name)) 
 
 if playerChoice == 1 and computerChoice == 3 :
     print("🏆 You won")
@@ -29,3 +29,4 @@ elif playerChoice == computerChoice:
     print("🤝 Tie")
 else:
     print("💻 computer wins")
+

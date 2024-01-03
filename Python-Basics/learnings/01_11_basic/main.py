@@ -1,9 +1,9 @@
 # Data Types in Python
-# Numeric, Sequencial
+# Numeric, Sequencial, Boolean, Set & Dictionary
+# Variables
 
 # Numeric Data Types
 # int, float and Complex numbers
-
 # int
 a = 5
 print(type(a))
@@ -159,3 +159,168 @@ print(list)
 list.pop(3)
 print(list)
 
+# Tuple - Immutable 
+tuple1 = ("lenskart", "Amazon")
+print(tuple1)
+
+list1 = [1, 2, 3, 4, 5]
+print("\n",tuple(list1))
+
+print(tuple("Flipkart"))
+
+# for loop
+Tuple1 = ('Geeks')
+n = 5
+print("\nTuple with a loop")
+for i in range(int(n)):
+    Tuple1 = (Tuple1,)
+    print(Tuple1)
+
+# Unpacking
+tuple1 = ("lenskart", "Amazon", "Flipkart")
+a, b, c = tuple1
+print(a)
+print(b)
+print(c)
+
+# Concatenation of Tuples
+tuple1 = ("lenskart", "Amazon", "Flipkart")
+tuple2 = (0, 1, 2, 3)
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
+# Delete a tuple
+del tuple3
+# print(tuple3)
+
+# Boolean
+print(type(True))
+print(type(False))
+
+
+# Set - mutable & unordered
+set1 = {"Vishnu", "Vishwas", 20}
+print(type(set1))
+
+String = "Vishnu"
+set1 = set(String)
+print(set1)
+
+# set of list
+set1 = set([1, 2, 'Geeks', 4, 'For', 6, 'Geeks'])
+print("\nSet with the use of Mixed Values")
+print(set1)
+
+# adding element to set
+
+# add element using add()
+set1 = set()
+set1.add(23)
+set1.add(33)
+set1.add(44)
+print(set1)
+
+# add element using update()
+set1 = {1, 2, (4, 5)}
+set1.update([6, 7])
+print(set1)
+
+# Removing ele from set
+set1 = {1, 2, (4, 5), 9, 10}
+
+# using remove()
+set1.remove(1)
+
+# using discard()
+set1.discard((4,5))
+print(set1)
+
+# using pop()     - First element will be deleted
+set1.pop()
+print(set1)
+
+# frozen set - immutable
+set1 = {1, 2 ,3 , 4, 5} 
+set2 = frozenset(set1)
+print(set2)
+
+# Empty Frozenset
+print(frozenset())
+
+# clear()
+set1.clear()
+print(set1)
+
+# Union
+set1 = {1, 2, 3}
+set2 = {4, 5, 6}
+print(set1.union(set2))
+
+# super set
+set1 = {1, 2, 3, 4, 5}
+set2 = {2, 3, 4}
+superset = set1.issuperset(set2)
+print(superset)
+
+# Dictionary
+Dict = {}
+print(Dict)
+
+Dict = {1 : "Vishnu", 2 : "Vishwas"}
+print(Dict)
+
+Dict = dict({1: 'Geeks', 2: 'For', 3: 'Geeks'}) 
+print("\nDictionary with the use of dict(): ") 
+print(Dict) 
+
+Dict = dict([(1, "Vishnu"), (2, "Vishwas")])
+print("\nDictionary with each item as a pair: ")
+print(Dict)
+
+Dict = dict([(1, "Vishnu"), (2, "Vishwas")])
+print(Dict[1])
+print(Dict.get(2))
+
+
+
+# variables are used to store data 
+
+# type()
+number = 435
+print(number)
+print(type(number))  # type() - data type of variable
+
+name = "Vishwas"
+print(name)
+print(type(name))    # the data type will be string
+
+# concatenation of variable 
+print("Vishnu " + name)
+
+# multiple assignment
+a = b = c = 45
+print(str(a) + " " + str(b) + " " + str(c))
+
+# multiple assignment  for different var in 1line
+a, b, c = 34, 44, 55
+print(str(a) + " " + str(b) + " " + str(c))
+
+# concatenation of 2 variables
+fist_name = "Itachi"
+last_name = "Uciha"
+
+print("Full name : " + fist_name + " " + last_name)
+
+# Global Variable - Global keyword is used inside a function only when we want to do assignments or when we want to change a variable
+
+x = 15
+def change():
+    # using a global keyword
+    global x
+
+    # increment value of a by 5
+    x = x + 6
+    print("Value of x inside a function :", x)
+ 
+change()
+print("Value of x outside a function :", x)
