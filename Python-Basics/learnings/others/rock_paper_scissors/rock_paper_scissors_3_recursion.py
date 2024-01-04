@@ -1,8 +1,10 @@
+# Implementation of recursion
+
 from enum import Enum
 import sys
 import random
 
-def play_rps():
+def play_rock_paper_scissors():
     class RPS(Enum) :
         ROCK = 1
         PAPER = 2
@@ -12,7 +14,7 @@ def play_rps():
 
     if(user < 1 or user > 3):
         print("You must eneter 1, 2 or 3.")
-        return play_rps()
+        return play_rock_paper_scissors()
 
     system = int(random.choice("123"))
     print("You chose : " + str(RPS(user)).replace('RPS.', "").title())
@@ -32,11 +34,13 @@ def play_rps():
     while True:
         playagain = input("\nY for Yes or \nQ to Quit\n")
         if playagain == "y":
-            return play_rps()
+            return play_rock_paper_scissors()
         else:
             print("\n🎉🎉🎉🎉")
             print("Thank you for playing!\n")
             break
 
-play_rps()
+play_rock_paper_scissors()
 
+if __name__ == "__main__":
+    play_rock_paper_scissors()
