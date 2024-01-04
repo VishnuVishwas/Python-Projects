@@ -1,28 +1,19 @@
-- list.py
+      - Lists
+        - Create List
+        - Nested List
+        - size of list
+        - String to list
+        - Adding elements to list
+        - Reverse a list -> reverse()
+        - Removing elements from the list
 
-  - creating a list
-  - Checking for element
-  - length of list
-  - adding element
-  - deleting element
-  - reverse
-  - sort
-  - types of copying list
+      - Tuples
+        - Creating Tuple
+        -  Using for loop
+        -  Tuple unpacking
+        -  Concatenation of Tuples
+        -  Delete a tuple
 
-- tuples.py
-
-  - Creating tuples
-  - Creating a tuple using list
-  - Unpacking tuples
-  - Frequency of element
-
-- dictionary.py
-  - Create dictionary
-  - Access items
-  - List all keys, values and items
-  - verify if key exists
-  - change values
-  - remove items
-  - clear dictionary
-  - copy dictinary
-  - nested dictionary
+      - Dictionary
+      - Create
+      - Accessing
