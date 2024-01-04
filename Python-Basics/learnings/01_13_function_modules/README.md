@@ -1,13 +1,15 @@
-- functions.py
+- main.py
+  - Functions
+    - Create
+    - Parameters & Arguments
+    - Types of Arguments
+    - Arbitrary arguments
+      - *args
+      - **kwargs
+    - Function within function
+  - User defined modules
 
-  - def
-  - \*args, when arguments are unknown, type will be tuple
-  - \*\*kwargs, for key-value, type dictonary
+- user_defined_modules.py
+  - variables 
+  - function -> randomfunfact()
 
-- module.py
-
-  - inbuilt module
-  - accessing user defined module (kanas.py)
-
-- kanas.py
-  - user defined module

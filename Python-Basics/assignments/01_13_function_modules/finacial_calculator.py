@@ -54,3 +54,6 @@ print("Interest Rate:", interest_rate(pv, fv_annuity, n_per_year, time_years))
 print("Number of Compounding Periods:", number_of_compounding_periods(pv, fv_annuity, rate, n_per_year))
 
 print("Present Value:", present_value(fv_annuity, rate, n_per_year, time_years))
+
+if __name__ == "__main__":
+    pass

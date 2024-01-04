@@ -1,4 +1,4 @@
-- financialCalculator.py
+- finacial_calculator.py
   - calculate future Value
   - calculate periodic Payment Loan
   - calucate periodic payment annumity
