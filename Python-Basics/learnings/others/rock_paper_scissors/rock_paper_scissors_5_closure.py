@@ -1,3 +1,5 @@
+# Implementation of closure
+
 import sys
 import random
 from enum import Enum
@@ -8,7 +10,7 @@ def rps():
     player_wins = 0
     python_wins = 0
 
-    def play_rps():
+    def play_rock_paper_scissors():
 
         class RPS(Enum):
             ROCK = 1
@@ -20,7 +22,7 @@ def rps():
 
         if playerchoice not in ["1", "2", "3"]:
             print("You must enter 1, 2, or 3.")
-            return play_rps()
+            return play_rock_paper_scissors()
 
         player = int(playerchoice)
 
@@ -70,13 +72,13 @@ def rps():
                 break
 
         if playagain.lower() == "y":
-            return play_rps()
+            return play_rock_paper_scissors()
         else:
             print("\n🎉🎉🎉🎉")
             print("Thank you for playing!\n")
             sys.exit("Bye! 👋")
 
-    return play_rps
+    return play_rock_paper_scissors
 
 
 play = rps()
