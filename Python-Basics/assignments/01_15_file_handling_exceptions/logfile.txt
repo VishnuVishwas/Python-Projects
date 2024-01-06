@@ -1,0 +1,8 @@
+2023-01-01 10:15:30 - INFO: Application started
+2023-01-01 10:20:45 - ERROR: Something went wrong
+2023-01-02 14:30:00 - WARNING: Deprecated function used
+2023-01-03 08:45:20 - INFO: Task completed successfully
+196520947 [Guido Bellomo] > Wed Oct 05 2016 12:08:45 GMT+0000 - /start
+196520947 [Guido Bellomo] < Wed Oct 05 2016 12:08:45 GMT+0000 - Hi, this is GuidoneBot, here's what I can do for you:/help - you're already seeing this/where - tells where's Guido's house/cv - to get an updated CV (via email)/cam - pry into Guido's living room/message - send a high priority message to Guido/home - check if Guido is at home
+196520947 [Guido Bellomo] > Wed Oct 05 2016 12:11:23 GMT+0000 - Come ti chiami?
+196520947 [Guido Bellomo] > Wed Oct 05 2016 12:11:23 GMT+0000 - Sorry, I'm can only speak English

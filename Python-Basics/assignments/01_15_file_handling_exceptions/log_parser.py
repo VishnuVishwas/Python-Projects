@@ -7,6 +7,7 @@ class LogFileParser:
         self.log_file_path = os.path.join(script_directory, log_file_path)
         self.log_entries = []
 
+
     def parse_log_file(self):
         with open(self.log_file_path, 'r') as file:
             for line in file:
@@ -21,6 +22,6 @@ class LogFileParser:
             print(f"Timestamp: {entry['timestamp']}, Level: {entry['level']}, Message: {entry['message']}")
 
 # Example Usage
-log_parser = LogFileParser("python d:/GitHub/internship-python/Python-Basics/assignments/01_15_file_handling_exceptions/log_parser.py")
+log_parser = LogFileParser("logfile.txt")
 log_parser.parse_log_file()
 log_parser.display_log_entries()
