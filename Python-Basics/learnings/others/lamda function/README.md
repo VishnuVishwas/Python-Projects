@@ -1,0 +1,3 @@
+- main.py
+    - create a lambda function
+    - Difference between lambda and def

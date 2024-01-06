@@ -1,10 +1,19 @@
-- exceptions.py
+- main.py
+  - Exception handling
+    - try block
+    - exception block
+    - custom error
+    - final block
+  
+  - File Handling
+    - Open
+    - Modes 
+    - Read Mode
+    - Write mode
+    - Append mode
 
-  - handling exceptions raised by machine
-  - custom exception
+- File_handling_functions
+  - main.py
+  - __init__.py
 
-- files_handling.py
-  - r = Read
-  - a = Append
-  - w = Write
-  - x = Create
+
