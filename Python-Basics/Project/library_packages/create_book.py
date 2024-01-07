@@ -25,4 +25,5 @@ def create_book(file_name, Book_list):
     print("Book info added successfully.")
 
 if __name__ == "__main__":
-    pass
+    print("The funciton is used to create a book")
+
