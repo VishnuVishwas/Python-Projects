@@ -1,3 +1,6 @@
+# Personal Library Management System
+
+# importing user defined packages 
 from library_packages import create_book
 from library_packages import update_book
 from library_packages import retrieve_book
@@ -31,9 +34,12 @@ class Library:
             delete_book.delete_book(book_id, file_name, Book_list)
 
 if __name__ == "__main__":
+    # creating file
     file_name = input("Enter the file name to be created : ")
+    # to hold & track books for file
     Book_list = []
 
+    # create a file
     try:
         with open(file_name, 'w') as f:
             f.write("Personal Library Management System\n")
@@ -41,8 +47,10 @@ if __name__ == "__main__":
     except IOError:
         print("Error: could not create file " + file_name)
 
+    # Object creation
     lib_instance = Library()
 
+    # repeat until user quits
     while True:
         lib_instance.PersonalLibraryManagement(file_name, Book_list)
 
