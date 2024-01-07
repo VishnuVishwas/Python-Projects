@@ -1,13 +1,22 @@
-- Description
+# Personal Library Management System
 
-  - Personal Library Management System
-  - we can insert books
-  - we can read the books in library
+## Project Description
 
-- time required to complete the task
+This Python-based Personal Library Management System enables users to manage their book collection efficiently. It supports operations like creating, updating, retrieving, and deleting book information. The system utilizes a text file for data storage and user interaction.
 
-  - half an hour
+## Time Required
 
-- what all the things you have referred for completing the task
+The estimated completion time for this task is approximately 5-6 hours. This includes setting up the project, coding, testing, and documentation.
 
-  - reffered youtube tutorial - classes section
+## References
+
+- [Python Documentation](https://docs.python.org/)
+- Learnings Section: Revisited previously learned concepts for effective implementation.
+- Google: Used for additional content and insights.
+
+## Problem-solving with GitHub
+
+- **Importing User-Defined Packages**: Addressed challenges by adjusting the current working directory to ensure proper package import.
+- **Dictionary Usage in Create Function**: Overcame challenges related to dictionary due to naming conventions.
+- **Function Creation**: Initially faced challenges in creating the first function but gained speed and phase with progression.
+
