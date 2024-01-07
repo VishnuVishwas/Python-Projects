@@ -1,3 +1,4 @@
+# Function is used to delete a book based on ID
 def delete_book(book_id, file_name, Book_list):
     for book in Book_list:
         if book['Book ID'] == book_id:
@@ -16,4 +17,4 @@ def update_file(file_name, Book_list):
             f.write(f"{book['Book ID']}\t{book['Book Name']}\t{book['Genre']}\t{book['Language']}\t{book['Price']}\n")
 
 if __name__ == "__main__":
-    pass
+        print("The funciton is used to delete a book")
