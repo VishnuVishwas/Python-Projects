@@ -1,3 +1,4 @@
+# Update the info about book
 
 def update_book(book_id, Book_list, file_name):
     for book in Book_list:
@@ -25,4 +26,4 @@ def update_book(book_id, Book_list, file_name):
     print(f"Book with ID {book_id} not found. ")
 
 if __name__ == "__main__":
-    pass
+        print("The funciton is used to display all the books present in library")
