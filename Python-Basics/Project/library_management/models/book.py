@@ -6,6 +6,7 @@ class Book:
         self.book_name = book_name
         self.book_price = book_price
     
+    # show book details
     def show_details(self):
         print("-------------------------------")
         print("Book Details:")

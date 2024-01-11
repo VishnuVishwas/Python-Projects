@@ -4,20 +4,24 @@ from models.library import Library
 
 state_centre_library = Library('State Centre')
 
+# add book
 def add_books():
     state_centre_library.add_book('You can', 500)  
     state_centre_library.add_book('The power of subconscious', 350)
     state_centre_library.add_book('Atomic Habits', 550)
 
+# view all books
 def view_all_books():
     print("Books in library are: ")
     state_centre_library.show_books()
 
+# delete book
 def delete_book():
     view_all_books()
     book_id = input("Enter the ID of the book you want to delete: ")
     state_centre_library.delete_book(book_id)
 
+# view specific book based on ID
 def view_book():
     view_all_books()
     book_id = input("Enter the ID of the book you want to view: ")
