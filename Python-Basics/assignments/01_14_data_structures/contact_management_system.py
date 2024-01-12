@@ -1,38 +1,38 @@
 # contanct management system
 import sys
 
-phoneBook = {}
+phone_book = {}
 
 def add():
     print("Enter the contact details : ")
     name = input("Enter the name : ")
     number = int(input("Enter the Contact Number : "))
 
-    # phoneBook[name] = number
-    phoneBook.update({name : number})
+    # phone_book[name] = number
+    phone_book.update({name : number})
 
 def remove():
     name = input("Enter the contact name : ")
-    if name in phoneBook:
-        del phoneBook[name]
+    if name in phone_book:
+        del phone_book[name]
         print(f"Contact '{name}' deleted successfully.")
     else:
         print(f"Contact '{name}' not found.")
 
 def view() :
     print("Contact details are : ")
-    # for name in phoneBook:
-    # print(name, phoneBook[name])
-    for x, y in phoneBook.items() :
+    # for name in phone_book:
+    # print(name, phone_book[name])
+    for x, y in phone_book.items() :
         print(x, y)
     
-def phoneManagement():
+def phone_management():
     while True:    
         choice = int(input("Choose : \n1. Add Contact\n2. Delete Contact\n3. view contact\n4. Exit\n"))
 
         if (choice < 0 or choice > 4):
             print("Invalid: Chose from\n1. Add Contact\n2. Delete Contact\n3. view contact\n4. Exit")
-            phoneManagement()
+            phone_management()
         
         elif choice == 1:
             add()
@@ -45,12 +45,12 @@ def phoneManagement():
 
         flag = input("Wanna use phone directory again? if yes 'y' or Quit 'Q' ")
         if(flag.lower() == 'y'):
-            phoneManagement()
+            phone_management()
         else:
             sys.exit("Have a great day 👋🏻")
         
 
-phoneManagement()
+phone_management()
 
 if __name__ == "__main__":
     pass
