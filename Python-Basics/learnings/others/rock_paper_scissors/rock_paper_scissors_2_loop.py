@@ -4,7 +4,7 @@ from enum import Enum
 import sys
 import random
 
-class RPS(Enum) :
+class RockPaperScissors(Enum) :
     ROCK = 1
     PAPER = 2
     SCISSORS = 3
@@ -16,8 +16,8 @@ while True:
 
     system = int(random.choice("123"))
 
-    print("You chose : " + str(RPS(user)).replace('RPS.', "").title())
-    print("Computer chose : " + str(RPS(system).name))
+    print("You chose : " + str(RockPaperScissors(user)).replace('RockPaperScissors.', "").title())
+    print("Computer chose : " + str(RockPaperScissors(system).name))
 
     if user == 1 and system == 3:
         print("🎉 You win!")
@@ -31,13 +31,13 @@ while True:
         print("🐍 Python wins!")
     
     while True:
-        playagain = print("Wanna play again? Y or Q")
-        if playagain.lower() == 'y':
+        play_again = print("Wanna play again? Y or Q")
+        if play_again.lower() == 'y':
             continue
         else:
             print("\n🎉🎉🎉🎉")
             print("Thank you for playing!\n")
-            playagain = False
+            play_again = False
 
 sys.exit("Bye! 👋")
 
