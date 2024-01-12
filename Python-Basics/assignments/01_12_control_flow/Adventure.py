@@ -29,22 +29,22 @@ while True:
 print("🕺🏻 You are a step closer to your destination 💃🏻")
 print("Choose the right box to open heart of forest,\n1. Box1\n1. Box2\n1. Box3")
 
-boxChoice = int(input("Choose your box🔮 : "))
+box_choice = int(input("Choose your box🔮 : "))
 while True:
-    if boxChoice == 1:
+    if box_choice == 1:
         print("Help!!! Snakesss 🐍")
-        boxChoice = int(input("Enter your choice : "))
+        box_choice = int(input("Enter your choice : "))
         continue
-    elif boxChoice == 3:
+    elif box_choice == 3:
         print("Key obtained 🔑")
         break
-    elif boxChoice == 2:
+    elif box_choice == 2:
         print("ochh!!! Bee stings 🐝")
-        boxChoice = int(input("Enter your choice : "))
+        box_choice = int(input("Enter your choice : "))
         continue
     else:
         print("Choose a valid number : ")
-        boxChoice = int(input("Enter your choice : "))
+        box_choice = int(input("Enter your choice : "))
         continue
 
 print("Elf : I appriciate your bravery, you are the first human to pass the forset")
