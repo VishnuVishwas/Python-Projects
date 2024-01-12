@@ -4,34 +4,33 @@ import sys
 import random
 from enum import Enum
 
-
-def rps():
+def RockPaperScissors():
     game_count = 0
     player_wins = 0
     python_wins = 0
 
     def play_rock_paper_scissors():
 
-        class RPS(Enum):
+        class RockPaperScissors(Enum):
             ROCK = 1
             PAPER = 2
             SCISSORS = 3
 
-        playerchoice = input(
+        play_again = input(
             "\nEnter... \n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n")
 
-        if playerchoice not in ["1", "2", "3"]:
+        if play_again not in ["1", "2", "3"]:
             print("You must enter 1, 2, or 3.")
             return play_rock_paper_scissors()
 
-        player = int(playerchoice)
+        player = int(play_again)
 
-        computerchoice = random.choice("123")
+        computer_choice = random.choice("123")
 
-        computer = int(computerchoice)
+        computer = int(computer_choice)
 
-        print("\nYou chose " + str(RPS(player)).replace('RPS.', '').title() + ".")
-        print("Python chose " + str(RPS(computer)).replace('RPS.', '').title() + ".\n")
+        print("\nYou chose " + str(RockPaperScissors(player)).replace('RockPaperScissors.', '').title() + ".")
+        print("Python chose " + str(RockPaperScissors(computer)).replace('RockPaperScissors.', '').title() + ".\n")
 
         def decide_winner(player, computer):
             nonlocal player_wins
@@ -65,13 +64,13 @@ def rps():
         print("\nPlay again?")
 
         while True:
-            playagain = input("\nY for Yes or \nQ to Quit\n")
-            if playagain.lower() not in ["y", "q"]:
+            play_again = input("\nY for Yes or \nQ to Quit\n")
+            if play_again.lower() not in ["y", "q"]:
                 continue
             else:
                 break
 
-        if playagain.lower() == "y":
+        if play_again.lower() == "y":
             return play_rock_paper_scissors()
         else:
             print("\n🎉🎉🎉🎉")
@@ -81,6 +80,6 @@ def rps():
     return play_rock_paper_scissors
 
 
-play = rps()
+play = RockPaperScissors()
 
 play()

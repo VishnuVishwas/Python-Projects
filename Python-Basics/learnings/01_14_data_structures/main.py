@@ -94,7 +94,7 @@ print("\n",tuple(list1))
 print(tuple("Flipkart"))
 
 # for loop
-Tuple1 = ('Geeks')
+tuple1 = ('Geeks')
 n = 5
 print("\nTuple with a loop")
 for i in range(int(n)):
@@ -121,20 +121,20 @@ del tuple3
 
 
 # Dictionary
-Dict = {}
-print(Dict)
+dict = {}
+print(dict)
 
-Dict = {1 : "Vishnu", 2 : "Vishwas"}
-print(Dict)
+dict = {1 : "Vishnu", 2 : "Vishwas"}
+print(dict)
 
-Dict = dict({1: 'Geeks', 2: 'For', 3: 'Geeks'}) 
+dict1 = dict({1: 'Geeks', 2: 'For', 3: 'Geeks'}) 
 print("\nDictionary with the use of dict(): ") 
-print(Dict) 
+print(dict1) 
 
-Dict = dict([(1, "Vishnu"), (2, "Vishwas")])
+dict = dict([(1, "Vishnu"), (2, "Vishwas")])
 print("\nDictionary with each item as a pair: ")
-print(Dict)
+print(dict1)
 
-Dict = dict([(1, "Vishnu"), (2, "Vishwas")])
-print(Dict[1])
-print(Dict.get(2))
+dict1 = dict([(1, "Vishnu"), (2, "Vishwas")])
+print(dict1[1])
+print(dict1.get(2))

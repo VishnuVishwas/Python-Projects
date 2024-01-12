@@ -5,7 +5,7 @@ import sys
 import random
 
 def play_rock_paper_scissors():
-    class RPS(Enum) :
+    class RockPaperScissors(Enum) :
         ROCK = 1
         PAPER = 2
         SCISSORS = 3
@@ -17,8 +17,8 @@ def play_rock_paper_scissors():
         return play_rock_paper_scissors()
 
     system = int(random.choice("123"))
-    print("You chose : " + str(RPS(user)).replace('RPS.', "").title())
-    print("Computer chose : " + str(RPS(system).name))
+    print("You chose : " + str(RockPaperScissors(user)).replace('RockPaperScissors.', "").title())
+    print("Computer chose : " + str(RockPaperScissors(system).name))
 
     if user == 1 and system == 3:
         print("🎉 You win!")
@@ -32,8 +32,8 @@ def play_rock_paper_scissors():
         print("🐍 Python wins!")
     
     while True:
-        playagain = input("\nY for Yes or \nQ to Quit\n")
-        if playagain == "y":
+        play_again = input("\nY for Yes or \nQ to Quit\n")
+        if play_again == "y":
             return play_rock_paper_scissors()
         else:
             print("\n🎉🎉🎉🎉")

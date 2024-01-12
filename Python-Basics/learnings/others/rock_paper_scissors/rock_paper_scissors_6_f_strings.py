@@ -10,27 +10,27 @@ def rock_paper_scissors():
 
     def play_rock_paper_scissors():
 
-        class RPS(Enum):
+        class RockPaperScissors(Enum):
             ROCK = 1
             PAPER = 2
             SCISSORS = 3
 
-        playerchoice = input(
+        player_choice = input(
             "\nEnter... \n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n")
 
-        if playerchoice not in ["1", "2", "3"]:
+        if player_choice not in ["1", "2", "3"]:
             print("You must enter 1, 2, or 3.")
             return play_rock_paper_scissors()
 
-        player = int(playerchoice)
+        player = int(player_choice)
 
-        computerchoice = random.choice("123")
+        computer_choice = random.choice("123")
 
-        computer = int(computerchoice)
+        computer = int(computer_choice)
 
 # used f strings
-        print(f"\nYou chose  {str(RPS(player)).replace('RPS.', '').title()}.")
-        print(f"Python chose {str(RPS(computer)).replace('RPS.', '').title()}.\n")
+        print(f"\nYou chose  {str(RockPaperScissors(player)).replace('RockPaperScissors.', '').title()}.")
+        print(f"Python chose {str(RockPaperScissors(computer)).replace('RockPaperScissors.', '').title()}.\n")
 
         def decide_winner(player, computer):
             nonlocal player_wins
@@ -65,13 +65,13 @@ def rock_paper_scissors():
         print("\nPlay again?")
 
         while True:
-            playagain = input("\nY for Yes or \nQ to Quit\n")
-            if playagain.lower() not in ["y", "q"]:
+            play_again = input("\nY for Yes or \nQ to Quit\n")
+            if play_again.lower() not in ["y", "q"]:
                 continue
             else:
                 break
 
-        if playagain.lower() == "y":
+        if play_again.lower() == "y":
             return play_rock_paper_scissors()
         else:
             print("\n🎉🎉🎉🎉")
