@@ -5,6 +5,7 @@ class User():
         self.age = age
         self.gender = gender
 
+    # show user details
     def show_details(self):
         print("Personal details")
         print("")
