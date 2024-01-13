@@ -35,8 +35,9 @@ class Library():
                 book.book_price = new_price
                 print(f"The book with ID {book_id} was updated.")
                 book.show_details()
-                return
-        print(f"The book with ID {book_id} not found.")
+                break
+        else:
+            print(f"The book with ID {book_id} not found.")
 
     # delete book 
     def delete_book(self, book_id: str):
@@ -44,5 +45,6 @@ class Library():
             if book.book_id == book_id:
                 deleted_book = self.books.pop(index)
                 print(f"Book '{book_id}' with name '{book.book_id}' was deleted.")
-                return
+                break
+        else:
             print(f"No book found with ID {book_id}")
