@@ -2,15 +2,7 @@
 
 from models.student import Student
 from models.faculty import Faculty
-
-# Courses
-class Courses():
-    def __init__(self, course_id: str, course_name: str) -> None:
-        self.course_id = course_id
-        self.course_name = course_name
-    
-    def __str__(self) -> str:
-        return f"Course ID: {self.course_id}\nCourse Name: {self.course_name}"  
+from models.courses import Courses
 
 # Department
 class Department():
@@ -35,3 +27,7 @@ class Department():
         self.courses.append(course)
         print(f"Course '{course.course_name}' created in' {self.department_name}' Department")
 
+    def update_student_details(self, student_id: str, new_name: str):   
+        for student in self.students:
+            if student.student_id == student_id:
+                student.student_name = new_name
