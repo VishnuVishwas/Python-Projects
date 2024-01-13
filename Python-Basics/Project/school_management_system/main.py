@@ -11,6 +11,7 @@ if __name__ == "__main__":
         print("3. Create Course")
         print("4. Display Information")
         print("5. Quit")
+        print("6. Update student details")
 
         choice = input("Enter your choice (1-5): ")
 
