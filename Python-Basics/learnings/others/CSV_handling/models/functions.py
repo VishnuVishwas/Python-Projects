@@ -92,14 +92,6 @@ def write_dictionary(filename):
         writer.writeheader()
         writer.writerows(mydict)
 
-#Reading CSV Files With Pandas
-def read_csv_with_pandas(filename):
-    
 
 if __name__ == "__main__":
-    # read_csv("data.csv")
-    # read_dict_csv('employee_records.csv')
-    # write_data_to_csv('university_records.csv')
-    # read_csv('university_records.csv')
-    # write_dictionary('university_records.csv')
-    # read_csv('university_records.csv')
+    pass
