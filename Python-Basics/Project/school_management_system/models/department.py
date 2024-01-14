@@ -14,33 +14,39 @@ class Department:
         self.faculty = []
         self.courses = []
 
+    # Add students to department
     def admit_student(self, student_id: str, student_name: str):
         student = Student(student_id, student_name)
         self.students.append(student)
         print(f"Student '{student.student_name}' admitted to department {self.department_name}")
 
+    # Add faculty to department
     def admit_faculty(self, faculty_id: str, faculty_name: str):
         faculty = Faculty(faculty_id, faculty_name)
         self.faculty.append(faculty)
         print(f"Faculty '{faculty.faculty_name}' admitted to department {self.department_name}")
 
+    # Create course
     def create_course(self, course_id: str, course_name: str):
         course = Courses(course_id, course_name)
         self.courses.append(course)
         print(f"Course '{course.course_name}' created in '{self.department_name}' Department")
 
+    # Update student details
     def update_student_details(self, student_id: str, new_name: str):
         for student in self.students:
             if student.roll_no == student_id:
                 student.student_name = new_name
                 print(f"Student '{student.student_name}' updated")
 
+    # Update faculty details
     def update_faculty_details(self, faculty_id: str, new_name: str):
         for faculty in self.faculty:
             if faculty.faculty_id == faculty_id:
                 faculty.faculty_name = new_name
                 print(f"Faculty '{faculty.faculty_name}' updated")
 
+    # Delete student from department
     def delete_student(self, student_id: str):
         for student in self.students:
             if student.roll_no == student_id:
@@ -50,6 +56,7 @@ class Department:
         else:
             print(f"Student with ID {student_id} was not found.")
 
+    # Delete faculty from department
     def delete_faculty(self, faculty_id: str):
         for faculty in self.faculty:
             if faculty.faculty_id == faculty_id:
