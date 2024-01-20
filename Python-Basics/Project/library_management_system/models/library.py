@@ -11,11 +11,13 @@ class Library:
         self.file_name = 'books.csv'
         self.load_books_from_csv()
 
+    # add book to library
     def add_book(self, book_name: str, book_author: str, genre: str):
         new_book = Book(book_name, book_author, genre)
         self.list_of_books.append(new_book)
         self.save_books_to_csv()
 
+    # remove book from library
     def remove_book(self, book):
         if book in self.list_of_books:
             self.list_of_books.remove(book)
@@ -24,6 +26,7 @@ class Library:
         else:
             print(f"\nBook {book.book_name} not found in {self.library_name} library.")
 
+    # save books from list to csv
     def save_books_to_csv(self):
         with open(self.file_name, 'w', newline='') as csvfile:
             field_names = ['book_id', 'book_name', 'book_author', 'genre', 'available']
@@ -39,6 +42,7 @@ class Library:
                     'available': book.available
                 })
 
+    # load books from list to csv
     def load_books_from_csv(self):
         try:
             with open(self.file_name, 'r') as csvfile:
@@ -52,6 +56,7 @@ class Library:
         except FileNotFoundError:
             print(f"\n{self.file_name} not found. No books loaded.")
 
+    # find book by name
     def find_book_by_name(self, book_name):
         for book in self.list_of_books:
             if book.book_name.lower() == book_name.lower():
@@ -59,16 +64,19 @@ class Library:
                 break
         return found_book
         
+    # add user to library
     def add_user(self, user):
         self.list_of_users.append(user)
         print(f"\nUser {user.user_name} was added to {self.library_name} library")
 
+    # remove user form library
     def remove_user(self, user):
         if user in self.list_of_users:
             self.list_of_users.remove(user)
         else:
             print(f"\n{user.user_name} does not exist.")
 
+    # find user by name
     def find_user_by_name(self, user_name):
         for user in self.list_of_users:
             if user.user_name.lower() == user_name.lower():
@@ -76,11 +84,13 @@ class Library:
                 break
         return found_user
         
+    # display all books present in library
     def display_all_books(self):
         print(f"\nAll books preset in {self.library_name} library:")
         for book in self.list_of_books:
             book.display_info()
         
+    # display all users present in library
     def display_all_users(self):
         print(f"\nAll users in {self.library_name} library:")
         for user in self.list_of_users:

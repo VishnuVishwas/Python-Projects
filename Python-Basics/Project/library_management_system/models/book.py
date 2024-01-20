@@ -10,8 +10,10 @@ class Book:
         self.genre = genre
         self.available = True
 
+    # check for availablity of book
     def check_availability(self):
         return self.available
 
+    # info of book
     def display_info(self):
         print(f"\nBook ID: {self.book_id}\nTitle: {self.book_name}\nAuthor: {self.book_author}\nGenre: {self.genre}")
