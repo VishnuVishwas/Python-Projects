@@ -1,99 +1,87 @@
-# library.py
-
 import csv
-import uuid 
+import uuid
 from .book import Book
 from .user import User
 
 class Library:
-    def __init__(self, library_name: str) -> None:
+    def __init__(self, library_name: str):
         self.library_name = library_name
         self.list_of_books = []
         self.list_of_users = []
-        self.filename = 'books.csv'
+        self.file_name = 'books.csv'
+        self.load_books_from_csv()
 
     def add_book(self, book_name: str, book_author: str, genre: str):
-        new_book = Book(str(uuid.uuid1()), book_name, book_author, genre)
+        new_book = Book(book_name, book_author, genre)
         self.list_of_books.append(new_book)
         self.save_books_to_csv()
 
     def remove_book(self, book):
         if book in self.list_of_books:
             self.list_of_books.remove(book)
-            print(f"Book {book.book_name} was removed from {self.library_name} library")
+            print(f"\nBook {book.book_name} was removed from {self.library_name} library")
+            self.save_books_to_csv()
         else:
-            print(f"Book {book.book_name} not found in {self.library_name} library.")
-    
+            print(f"\nBook {book.book_name} not found in {self.library_name} library.")
+
     def save_books_to_csv(self):
-        with open(self.filename, 'w', newline='') as csvfile:
-            feildnames = ['book_id', 'book_name', 'book_author', 'genre', 'available']
-            writer = csv.DictWriter(csvfile, fieldnames=feildnames)
+        with open(self.file_name, 'w', newline='') as csvfile:
+            field_names = ['book_id', 'book_name', 'book_author', 'genre', 'available']
+            writer = csv.DictWriter(csvfile, fieldnames=field_names)
 
             writer.writeheader()
             for book in self.list_of_books:
                 writer.writerow({
-                    'book_id' :book.book_id,
+                    'book_id': book.book_id,
                     'book_name': book.book_name,
                     'book_author': book.book_author,
                     'genre': book.genre,
-                    'available': book.available,
+                    'available': book.available
                 })
-            
+
     def load_books_from_csv(self):
         try:
-            with open(self.filename, 'r') as csvfile:
+            with open(self.file_name, 'r') as csvfile:
                 reader = csv.DictReader(csvfile)
                 for row in reader:
-                    new_book = Book(row['book_id'], row['book_name'], row['book_author'], row['genre'])
+                    new_book = Book(row['book_name'], row['book_author'], row['genre'])
+                    new_book.book_id = row['book_id']
                     new_book.available = row['available'] == 'True'
                     self.list_of_books.append(new_book)
-                print(f"Books loaded from {self.filename}")
+                print(f"\nBooks loaded from {self.file_name}")
         except FileNotFoundError:
-            print(f"{self.filename} not found. No books loaded.")
-    
+            print(f"\n{self.file_name} not found. No books loaded.")
+
+    def find_book_by_name(self, book_name):
+        for book in self.list_of_books:
+            if book.book_name.lower() == book_name.lower():
+                found_book = book
+                break
+        return found_book
+        
     def add_user(self, user):
         self.list_of_users.append(user)
-        print(f"User {user.user_name} was added to {self.library_name} library")
-        
+        print(f"\nUser {user.user_name} was added to {self.library_name} library")
+
     def remove_user(self, user):
         if user in self.list_of_users:
             self.list_of_users.remove(user)
-            print(f"User {user.user_name} was removed from {self.library_name}")
         else:
-            print(f"User {user.user_name} was not found in {self.library_name}")
+            print(f"\n{user.user_name} does not exist.")
 
+    def find_user_by_name(self, user_name):
+        for user in self.list_of_users:
+            if user.user_name.lower() == user_name.lower():
+                found_user = user
+                break
+        return found_user
+        
     def display_all_books(self):
-        print(f"All books present in {self.library_name} library: {[book.book_name for book in self.list_of_books]}")
-
+        print(f"\nAll books preset in {self.library_name} library:")
+        for book in self.list_of_books:
+            book.display_info()
+        
     def display_all_users(self):
-        print(f"All users in {self.library_name} library: {[user.user_name for user in self.list_of_users]}")
-
-    def return_book(self, user, book):
-        if user in self.list_of_users and book in user.books_borrowed:
-            user.return_book(book)
-            print(f"Book {book.book_name} returned by {user.user_name}")
-        else:
-            print(f"Book {book.book_name} could not be returned by {user.user_name}")
-
-
-if __name__ == "__main__":
-    lib = Library("Oxford")
-
-    book1 = Book('1', "jjk", 'anug', 'shonin')
-    book2 = Book('2', "Spy X Family", 'vishnu', 'comedy')
-
-    user1 = User('1', 'gojo')
-
-    lib.add_book('Meow wa', 'meowxx', 'Cat verse')
-    lib.add_user(user1)
-
-    user1.borrow_book(book1)
-    user1.borrow_book(book2)
-
-    lib.display_all_books()
-    lib.display_all_users()
-    user1.display_borrowed_books()
-
-    # Change this line to call the return_book method on the User object
-    user1.return_book(book1)
-    user1.display_borrowed_books()
+        print(f"\nAll users in {self.library_name} library:")
+        for user in self.list_of_users:
+            print(user.user_name)
