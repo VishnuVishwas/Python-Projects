@@ -6,3 +6,5 @@ class Courses():
     
     def __str__(self) -> str:
         return f"Course ID: {self.course_id}\nCourse Name: {self.course_name}"  
+    
+    
