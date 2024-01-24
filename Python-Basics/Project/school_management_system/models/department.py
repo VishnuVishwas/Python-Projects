@@ -1,28 +1,8 @@
 import csv
 
-class Student:
-    def __init__(self, roll_no: str, student_name: str) -> None:
-        self.roll_no = roll_no
-        self.student_name = student_name
-
-    def __str__(self):
-        return f"Student rollno: {self.roll_no}\nName: {self.student_name}"
-
-class Faculty:
-    def __init__(self, faculty_id: str, faculty_name: str) -> None:
-        self.faculty_id = faculty_id
-        self.faculty_name = faculty_name
-
-    def __str__(self):
-        return f"Faculty ID: {self.faculty_id}\nName: {self.faculty_name}"
-
-class Courses:
-    def __init__(self, course_id: str, course_name: str) -> None:
-        self.course_id = course_id
-        self.course_name = course_name
-
-    def __str__(self) -> str:
-        return f"Course ID: {self.course_id}\nCourse Name: {self.course_name}"
+from models.student import Student
+from models.faculty import Faculty
+from models.courses import Courses
 
 class Department:
 
