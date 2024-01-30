@@ -1,3 +1,5 @@
+# BMI Calculator
+
 """Body Mass Calculator 
 The calucultions is done of meteric measures i.e 
 height in meters and weight in kilograms"""
