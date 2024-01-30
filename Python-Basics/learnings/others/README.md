@@ -1,7 +1,9 @@
-- classes & objects
+- classes & objects - Bank System
 - closures
 - command line arguments
+- CSV file handling
 - f_strings
 - lamda funtion
+- Pandas
 - Recursion
 - rock_paper_scissors
