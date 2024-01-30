@@ -15,4 +15,6 @@
 
 - Projects
     - A system to manage personal book collection.
+    - Quiz
+    - School Management System
 
