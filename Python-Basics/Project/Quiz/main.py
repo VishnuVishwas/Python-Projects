@@ -1,6 +1,7 @@
 from models.quiz import Quiz
 from models.player import Player
 
+# create a player
 def create_player(player_list):
     player_name = input("Enter the player name: ")
     player = Player(player_name)
@@ -8,6 +9,7 @@ def create_player(player_list):
     print(f"Player {player_name} created successfully.")
     return player  
 
+# view scores of students
 def view_scores(player_list):
     if not player_list:
         print("No players found. Create a player first.")
@@ -17,6 +19,7 @@ def view_scores(player_list):
     for player in player_list:
         player.view_score()
 
+# play quiz
 def play_quiz(player_list, quiz_instance):
     if not player_list:
         print("No players found. Create a player first.")
