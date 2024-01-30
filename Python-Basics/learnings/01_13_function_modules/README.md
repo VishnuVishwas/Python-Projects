@@ -9,7 +9,8 @@
     - Function within function
   - User defined modules
 
-- user_defined_modules.py
-  - variables 
-  - function -> randomfunfact()
+- models
+  - user_defined_modules.py
+    - variables 
+    - function -> randomfunfact()
 

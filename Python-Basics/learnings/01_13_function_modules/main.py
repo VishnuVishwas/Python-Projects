@@ -8,14 +8,14 @@ def fun():
 fun()
 
 # Arguments & parameters
-def evenOdd(x):
+def even_odd(x):
     if(x%2 == 0) :
         print(f"{x} is a even number")
     else:
         print(f"{x} is a odd number")
 
-evenOdd(3)
-evenOdd(2)
+even_odd(3)
+even_odd(2)
 
 # Types of Arguments
 
@@ -46,13 +46,13 @@ def myfun(arg1, **kwargs):
 
 myfun("Hi", first="Vishnu", mid="Vishwas", last="Fushigoro")
 
-def myFun(arg1, arg2, arg3):
+def my_fun(arg1, arg2, arg3):
     print("arg1:", arg1)
     print("arg2:", arg2)
     print("arg3:", arg3)
  
  
-def myFun(arg1, arg2, arg3):
+def my_fun(arg1, arg2, arg3):
     print("arg1:", arg1)
     print("arg2:", arg2)
     print("arg3:", arg3)
@@ -61,10 +61,10 @@ def myFun(arg1, arg2, arg3):
 # Now we can use *args or **kwargs to
 # pass arguments to this function :
 args = ("Visnu", "for", "Vishwas")
-myFun(*args)
+my_fun(*args)
  
 kwargs = {"arg1": "Visnu", "arg2": "for", "arg3": "Vishwas"}
-myFun(**kwargs)
+my_fun(**kwargs)
 
 # Function within function
 def f1():
