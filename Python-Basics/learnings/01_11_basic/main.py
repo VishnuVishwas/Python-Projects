@@ -4,6 +4,7 @@
 
 # Numeric Data Types
 # int, float and Complex numbers
+
 # int
 a = 5
 print(type(a))
@@ -169,12 +170,12 @@ print("\n",tuple(list1))
 print(tuple("Flipkart"))
 
 # for loop
-Tuple1 = ('Geeks')
+tuple1 = ('Geeks')
 n = 5
 print("\nTuple with a loop")
 for i in range(int(n)):
-    Tuple1 = (Tuple1,)
-    print(Tuple1)
+    tuple1 = (tuple1,)
+    print(tuple1)
 
 # Unpacking
 tuple1 = ("lenskart", "Amazon", "Flipkart")
@@ -202,8 +203,8 @@ print(type(False))
 set1 = {"Vishnu", "Vishwas", 20}
 print(type(set1))
 
-String = "Vishnu"
-set1 = set(String)
+string1 = "Vishnu"
+set1 = set(string1)
 print(set1)
 
 # set of list
@@ -263,23 +264,23 @@ superset = set1.issuperset(set2)
 print(superset)
 
 # Dictionary
-Dict = {}
-print(Dict)
+dict = {}
+print(dict)
 
-Dict = {1 : "Vishnu", 2 : "Vishwas"}
-print(Dict)
+dict = {1 : "Vishnu", 2 : "Vishwas"}
+print(dict)
 
-Dict = dict({1: 'Geeks', 2: 'For', 3: 'Geeks'}) 
-print("\nDictionary with the use of dict(): ") 
-print(Dict) 
+dict = dict({1: 'Geeks', 2: 'For', 3: 'Geeks'}) 
+print("\ndictionary with the use of dict(): ") 
+print(dict) 
 
-Dict = dict([(1, "Vishnu"), (2, "Vishwas")])
-print("\nDictionary with each item as a pair: ")
-print(Dict)
+dict = dict([(1, "Vishnu"), (2, "Vishwas")])
+print("\ndictionary with each item as a pair: ")
+print(dict)
 
-Dict = dict([(1, "Vishnu"), (2, "Vishwas")])
-print(Dict[1])
-print(Dict.get(2))
+dict = dict([(1, "Vishnu"), (2, "Vishwas")])
+print(dict[1])
+print(dict.get(2))
 
 
 
