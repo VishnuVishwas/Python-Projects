@@ -4,6 +4,7 @@ class Courses():
         self.course_id = course_id
         self.course_name = course_name
     
+    # course details
     def __str__(self) -> str:
         return f"Course ID: {self.course_id}\nCourse Name: {self.course_name}"  
     

@@ -1,5 +1,6 @@
 from models.department import Department, Student, Faculty, Courses
 
+# store department instances
 departments = {}
 
 # Assuming these are the available departments

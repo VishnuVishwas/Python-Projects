@@ -9,7 +9,7 @@ class Library:
         self.list_of_books = []
         self.list_of_users = []
         self.file_name = 'books.csv'
-        self.load_books_from_csv()
+        self.load_books_from_csv()          
 
     # add book to library
     def add_book(self, book_name: str, book_author: str, genre: str):
