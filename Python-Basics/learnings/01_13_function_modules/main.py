@@ -76,7 +76,7 @@ def f1():
 f1()
 
 # import user defined module
-import user_defined_modules 
+import models.user_defined_modules  as user_defined_modules
 print(user_defined_modules.capital)
 user_defined_modules.randomfunfact()
 
