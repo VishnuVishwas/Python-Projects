@@ -1,0 +1,11 @@
+Question,Answer
+What is Python's built-in function for joining elements of a list into a string?,join
+Which keyword is used to define a function in Python?,def
+What is the output of the `print(3/2)` statement in Python 3?,1.5
+What is the Python module used for working with regular expressions?,re
+Which data type is used to represent a single character in Python?,str
+In Python which operator is used for exponentiation?,**
+What is the name of the built-in Python function used to get the length of a sequence?,len
+What is the primary purpose of the `__init__` method in a Python class?,initialization
+What is the Python term for a function defined inside another function?,nested
+Which module is used for working with dates and times in Python?,datetime

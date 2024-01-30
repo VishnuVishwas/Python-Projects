@@ -1,0 +1,11 @@
+Question,True/False
+Python uses braces ({}) to define blocks of code.,False
+In Python indentation is used to indicate the scope of code blocks.,True
+Python is a compiled language.,False
+The `range` function in Python creates a list of numbers.,False
+A variable in Python must be declared with a specific data type before use.,False
+Python supports multiple inheritance.,True
+The `==` operator in Python compares both value and type.,True
+The `break` statement is used to terminate the current loop and resume execution at the next statement.,True
+Python is not suitable for web development.,False
+A tuple in Python is mutable.,False
