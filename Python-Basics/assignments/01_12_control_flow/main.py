@@ -27,7 +27,7 @@ while True:
         choice = int(input("Enter your choice: "))
         continue
 
-# Choosing a box
+# Choose a box
 print("🕺🏻 You are a step closer to your destination 💃🏻")
 print("Choose the right box to open the heart of the forest,\n1. Box1\n2. Box2\n3. Box3")
 
