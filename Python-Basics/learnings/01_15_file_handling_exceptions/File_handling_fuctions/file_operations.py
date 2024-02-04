@@ -1,5 +1,8 @@
+# file_operations.py
+
 import os
 
+# create a file
 def create_file(filename):
     try:
         with open(filename, 'w') as f:
@@ -8,6 +11,7 @@ def create_file(filename):
     except IOError:
         print("Could not create file " + filename)
 
+# read a file
 def read_file(filename):
     try:
         with open(filename, "r") as f:
@@ -16,6 +20,7 @@ def read_file(filename):
     except IOError:
         print("Could not read file " + filename)
 
+# append to a file
 def append_file(filename, text):
     try:
         with open(filename, "a") as f:
@@ -24,6 +29,7 @@ def append_file(filename, text):
     except IOError:
         print("Could not append to file " + filename)
 
+# rename a file
 def rename_file(filename, new_filename):
     try:
         os.rename(filename, new_filename)
@@ -31,6 +37,7 @@ def rename_file(filename, new_filename):
     except IOError:
         print("Could not reanme file " + filename)
 
+# delete a file
 def delete_file(filename):
     try:
         os.remove(filename)
