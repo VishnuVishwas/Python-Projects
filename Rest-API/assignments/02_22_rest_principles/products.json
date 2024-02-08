@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "price": 999.99,
+        "description": "High-performance laptop.",
+        "category_id": 101
+    },
+    {
+        "id": 2,
+        "name": "Smartphone",
+        "price": 499.99,
+        "description": "Latest smartphone with advanced features.",
+        "category_id": 101
+    }
+]
