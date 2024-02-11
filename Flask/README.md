@@ -1,0 +1,7 @@
+- Here you need to add time table for completing the task
+- Also each time you complete or do anythings in learnings,assignments or Project , note down Title of things you have learnt and each title must contain
+  - time required to complete those task
+  - what you have completed
+  - what you have learnt from it
+  - steps taken to tackle the problems faced
+  - Links you have reffered for learning those task
