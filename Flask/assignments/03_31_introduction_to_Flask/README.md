@@ -1,2 +1,2 @@
-- data_types.py
-  - learnt operation on different data types
+ - app.py 
+  - Hello world application
