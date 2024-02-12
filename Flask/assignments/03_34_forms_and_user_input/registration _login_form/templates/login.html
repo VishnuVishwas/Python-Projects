@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>User Login</h1>
+    <form method="post" action="">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+        <label for="username">Username:</label>
+        {{ form.username }}
+        <br>
+        <label for="password">Password:</label>
+        {{ form.password }}
+        <br>
+        <button type="submit">Log In</button>
+    </form>
+</body>
+</html>
