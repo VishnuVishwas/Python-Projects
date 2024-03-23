@@ -4,6 +4,7 @@ from app.users.models import SignupUser
 from app import db
 from datetime import datetime
 
+# Products model 
 class Products(db.Model):
     id = db.Column(db.Integer, primary_key=True) 
     name = db.Column(db.String(200), nullable=False)
