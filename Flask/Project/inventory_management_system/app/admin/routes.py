@@ -35,6 +35,7 @@ def signup_admin():
     
     return render_template('admin/signup_admin.html')
 
+# admin login
 @app.route('/login-admin', methods=['GET', 'POST'])
 def login_admin():
     if request.method == 'POST':
@@ -53,13 +54,14 @@ def login_admin():
     
     return render_template('admin/login_admin.html')
 
+# admin logout
 @app.route('/logout')
 def logout_admin():
     logout_user()
     flash('You have been logged out.', 'info')
     return redirect('/')
 
-
+# view users 
 @app.route('/view-users')
 def view_users():
     users = SignupUser.query.all()

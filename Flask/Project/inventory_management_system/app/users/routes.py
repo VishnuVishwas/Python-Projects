@@ -5,10 +5,12 @@ from flask import render_template, request, flash, redirect
 from app.users.models import SignupUser
 from flask_login import login_user, logout_user
 
+# home
 @app.route('/')
 def index():
     return render_template('home.html')
 
+# user signup route
 @app.route('/signup-user', methods=['GET', 'POST'])
 def signup_user():
     if request.method == 'POST':
@@ -37,6 +39,7 @@ def signup_user():
         return redirect('/login-user')
     return render_template('user/signup.html')
 
+# user login route
 @app.route('/login-user', methods=['GET', 'POST'])
 def login_user_route():
 
@@ -59,6 +62,7 @@ def login_user_route():
         return redirect('/products-page')
     return render_template('user/login.html')
 
+# logout route
 @app.route('/logout')
 def logout():
     logout_user()

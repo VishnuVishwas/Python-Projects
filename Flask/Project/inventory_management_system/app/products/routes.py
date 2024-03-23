@@ -33,11 +33,8 @@ def create_product():
 
         db.session.add(new_product)
         db.session.commit()
-
-        # Redirect to the products page after adding the product
         return redirect('/products-page')
 
-    # If the request method is not POST, render the products page
     return render_template('products/products.html')
     
 # update product
@@ -51,7 +48,7 @@ def update_product(id):
         price = request.form.get('price')
         category = request.form.get('category')
 
-        # Check if any of the fields are empty, if so, retain the original values
+        # Check for changed fields
         if not name:
             name = product.name
         if not price:
@@ -64,11 +61,8 @@ def update_product(id):
         product.category = category
 
         db.session.commit()
-
-        # Redirect to the products page after updating the product
         return redirect('/products-page')
 
-    # Render the update form with pre-filled values
     return render_template('products/update.html', product=product)
 
 
