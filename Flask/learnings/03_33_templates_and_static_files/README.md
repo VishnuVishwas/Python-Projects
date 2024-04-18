@@ -1,6 +1,0 @@
-- flask_templates
-    - static 
-        - style.css
-    - templates
-        - index.html
-    - app.py

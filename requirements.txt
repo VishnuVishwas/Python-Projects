@@ -1,6 +1,0 @@
-Flask
-pandas
-numpy
-requests
-bcrypt
-python-dotenv
